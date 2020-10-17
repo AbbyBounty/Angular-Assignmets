@@ -1,0 +1,42 @@
+
+
+
+
+
+
+
+<div class="container">
+
+    <div class="card">
+        <div class="card-header">
+            <h3> Color Demo [ Que 5 ]</h3>
+           </div>
+
+        <div class="card-body">
+       
+         
+
+            
+            
+            <div [class.red-box]="boxType==1"
+            [class.blue-box]="boxType==2"
+            [class.green-box]="boxType==3"
+            [class.yellow-box]="boxType==4"
+            [class.brown-box]="boxType==5"
+            
+             class="box"></div>
+
+             <hr>
+            
+            <button  style="margin-left: 10px;" class="btn btn-success"  (click)="changeColor(3)">green</button>
+            <button  style="margin-left: 10px;" class="btn btn-warning" (click)="changeColor(4)">yellow</button>
+            
+            <button  style="margin-left: 10px;" class="btn btn-danger" (click)="changeColor(1)">red</button>
+            
+            <button  style="margin-left: 10px;" class="btn btn-info" (click)="changeColor(2)">blue</button>
+            
+        </div>
+    
+    </div>
+
+</div>

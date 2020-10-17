@@ -1,0 +1,25 @@
+<div class="container">
+
+    <div class="card">
+        <div class="card-header">
+            <h3> Binding Demo [ Que 1 ]</h3>
+           </div>
+
+        <div class="card-body">
+            <div>Name: {{name}}</div>
+            <div>Number: {{num}}</div>
+            <div>Names: {{names}}</div>
+            <span>Employees :</span>
+            <div *ngFor="let employee of employees">  
+                <span>Id:{{employee['id']}}, </span>
+                <span>Name:{{employee['name']}}, </span>
+                <span>Department:{{employee['dept']}}, </span>
+                <span>Salary:{{employee['salary']}} </span>
+            </div>
+
+
+        </div>
+    
+    </div>
+
+</div>
